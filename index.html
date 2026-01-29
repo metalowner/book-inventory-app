@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Book Inventory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header>
+  <h1>Book Inventory</h1>
+  <p>A book inventory app that demonstrates HTML tables and CSS selectors knowledge.</p>
+</header>
+<main>
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Category</th>
+        <th>Status</th>
+        <th>Rate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="read">
+        <td>Harry Potter 1</td>
+        <td>J.K.Rowling</td>
+        <td>Fantasy</td>
+        <td><span class="status">Read</span></td>
+        <td>
+          <span class="rate three">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </td>
+      </tr>
+      <tr class="read">
+        <td>Harry Potter 2</td>
+        <td>J.K.Rowling</td>
+        <td>Fantasy</td>
+        <td><span class="status">Read</span></td>
+        <td>
+          <span class="rate two">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </td>
+      </tr>
+      <tr class="in-progress">
+        <td>Lord Of The Rings</td>
+        <td>J.R.R. Tolkien</td>
+        <td>Fantasy</td>
+        <td><span class="status">In Progress</span></td>
+        <td>
+          <span class="rate">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </td>
+      </tr>
+      <tr class="to-read">
+        <td>A Song Of Ice And Fire</td>
+        <td>George R.R. Martin</td>
+        <td>Fantasy</td>
+        <td><span class="status">To Read</span></td>
+        <td>
+          <span class="rate">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+<footer>
+    <p>Done as part of the Responsive Web Certification introduced by <a href="freecodecamp.org" target="_blank">FreeCodeCamp</a>.</p>
+    <address>
+        <a href="mailto:pavelvini90@gmail.com">Send me an email!</a>
+    </address>
+</footer>
+</body>
+
+</html>

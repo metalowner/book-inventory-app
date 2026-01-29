@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+padding: 1rem;
+}
+tr[class="read"] {
+  background-image: linear-gradient(white , rgb(90, 255, 90));
+}
+tr[class="to-read"] {
+  background-image: linear-gradient(white, rgb(255, 87, 87));
+}
+tr[class="in-progress"] {
+  background-image: linear-gradient(white, rgb(72, 182, 255));
+}
+span {
+  display: inline-block;
+}
+th {
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+th:last-of-type {
+    border-right: none;
+}
+tr td {
+    padding: 0.5rem;
+    text-align: center;
+}
+tr[class="to-read"] span[class="status"] {
+border: 1px solid white;
+border-radius: 5px;
+background-image: linear-gradient(white, rgb(255, 87, 87), white);
+}
+
+tr[class="read"] span[class="status"] {
+border: 1px solid white;
+border-radius: 5px;
+background-image: linear-gradient(white, rgb(90, 255, 90), white);
+}
+
+tr[class="in-progress"] span[class="status"] {
+border: 1px solid white;
+border-radius: 5px;
+background-image: linear-gradient(white, rgb(72, 182, 255), white);
+}
+
+span[class="status"],
+span[class^="rate"] {
+  height: 2rem;
+  width: 7rem;
+  padding: 0.5rem;
+}
+span[class^="rate"] > span {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: gray;
+}
+span[class~="one"] span:first-of-type {
+  background-image: linear-gradient(yellow, gold);
+}
+span[class~="two"] span:nth-child(-n+2) {
+  background-image: linear-gradient(yellow, gold);
+}
+span[class~="three"] span {
+  background-image: linear-gradient(yellow, gold);
+}
+table {
+    margin: 1rem auto;
+    border: 1px solid black;
+}
+header,
+footer {
+    text-align: center;
+}
+p {
+    padding: 1rem;
+}
